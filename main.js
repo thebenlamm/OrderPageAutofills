@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name       Amazon Order Page
-// @namespace  http://use.i.E.your.homepage/
-// @version    0.1
-// @description  enter something useful
+// @version    1.0
+// @description  Some useful tool for the order page.
 // @match      https://sellercentral.amazon.com/gp/orders-v2/details*
-// @copyright  2012+, You
+// @copyright  2015, Ben Lamm
 // @grant    GM_setClipboard
 // @grant  GM_setValue
 // @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
@@ -31,8 +30,7 @@ function copyAddress(){
 
     var addressToPersist = name + ':' + street + ':' + city + ':' + phone;
     GM_setClipboard(addressToPersist);
-    //GM_setValue("address", addressToPersist);
-};
+}
 
 
 $(".data-display-field:first").append('<br><br><button id="copyAddress">copy address</button>');
@@ -48,4 +46,4 @@ skuNode.replaceWith("<button id='copySku'>" + skuText + "</button>");
       GM_setClipboard(skuText);
     });
 
-})
+});
