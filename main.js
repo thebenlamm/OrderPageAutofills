@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 $( document ).ready(function(){
-
+var debug = true;
  $(".data-display-field:first").css("font-size","14px");
 
 function copyAddress(){
@@ -23,10 +23,12 @@ function copyAddress(){
   var tempPhone = addressArray[arrayLength-3].split(":");
   var phone = tempPhone[1];
 
+if(debug){
   console.debug(name);
   console.debug(street);
   console.debug(city);
   console.debug(phone);
+}
 
     var addressToPersist = name + ':' + street + ':' + city + ':' + phone;
     GM_setClipboard(addressToPersist);
