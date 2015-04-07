@@ -28,6 +28,7 @@ if(debug){
   console.debug(street);
   console.debug(city);
   console.debug(phone);
+
 }
 
     var addressToPersist = name + ':' + street + ':' + city + ':' + phone;
