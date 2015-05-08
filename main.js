@@ -63,10 +63,18 @@ function copyAddress(){
 }
 
 
-$(".data-display-field:first").append('<br><br><button id="myButton">copy address</button>');
+$(".data-display-field:first").append('<br><br><button id="copyAddress">copy address</button>');
+var skuNode = $("td.tiny-example:contains('SKU:')").next();
+var skuText = skuNode.text();
+skuNode.replaceWith("<button id='copySku'>" + skuText + "</button>");
 
-    $("#myButton").click(function(){
+
+    $("#copyAddress").click(function(){
       copyAddress();
+    });
+
+     $("#copySku").click(function(){
+      GM_setClipboard(skuText);
     });
 
 });
