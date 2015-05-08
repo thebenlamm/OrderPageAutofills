@@ -48,7 +48,7 @@ $( document ).ready(function(){
         if(customer.state.length>2){
             state = getStateCode(customer.state);
         } else {
-          state = cusotmer.state.toUpperCase();
+          state = customer.state.toUpperCase();
         }
         $("#state").val(state);
 
