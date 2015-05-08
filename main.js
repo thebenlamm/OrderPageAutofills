@@ -62,6 +62,7 @@ function copyAddress(){
     GM_setClipboard(jsonText);
 }
 
+$(".data-display-field:first").css("font-size","14px");
 
 $(".data-display-field:first").append('<br><br><button id="copyAddress">copy address</button>');
 var skuNode = $("td.tiny-example:contains('SKU:')").next();
