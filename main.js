@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name       Amazon Order Page
-// @namespace  http://use.i.E.your.homepage/
-// @version    0.1
-// @description  enter something useful
-// @match      https://sellercentral.amazon.com/gp/orders-v2/details/*
-// @copyright  2012+, You
-// @grant    GM_setClipboard
-// @require http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js
-// ==/UserScript==
-
 $( document ).ready(function(){
 var debug = false;
 

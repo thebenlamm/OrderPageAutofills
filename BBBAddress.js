@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name         Bed Bath and Beyond Customer Address Page
-// @namespace    http://your.homepage/
-// @version      0.1
-// @description  enter something useful
-// @author       You
-// @match        https://www.bedbathandbeyond.com/store/checkout/shipping/shipping.jsp
-// ==/UserScript==
-
-
 document.onload = function(){
 
     var json = prompt("please paste address here");

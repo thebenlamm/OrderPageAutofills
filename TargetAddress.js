@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name       Target Customer Info page
-// @namespace  http://use.i.E.your.homepage/
-// @version    0.1
-// @description  enter something useful
-// @match      https://www-secure.target.com/checkout_process*
-// @copyright  2015+, Benlamm
-// ==/UserScript==
-
-
 $( document ).ready(function(){
     var myDebug = false;
 
