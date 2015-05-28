@@ -65,7 +65,7 @@ function copyAddress(){
 $(".data-display-field:first").css("font-size","14px");
 
 $(".data-display-field:first").append('<br><br><button id="copyAddress">copy address</button>');
-var skuNode = $("td.tiny-example:contains('SKU:')").next();
+var skuNode = $("td.tiny-example:contains('SKU:')").first().next();
 var skuText = skuNode.text();
 skuNode.replaceWith("<button id='copySku'>" + skuText + "</button>");
 
